@@ -17,6 +17,10 @@
         "app.ts",        
         "bin/www.ts",
         "routes/index.ts",
-        "routes/users.ts"        
+        "routes/user.ts",
+        "routes/post.ts",
+        "routes/reg.ts",
+        "routes/login.ts",
+        "routes/logout.ts"
     ]   
 }
