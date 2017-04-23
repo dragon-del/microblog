@@ -1,4 +1,5 @@
 import * as express from 'express';
+import * as expressLayouts from 'express-ejs-layouts';
 import * as path from 'path';
 import * as favicon from 'serve-favicon';
 import * as logger from 'morgan';
@@ -18,6 +19,7 @@ export var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.use(expressLayouts);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
